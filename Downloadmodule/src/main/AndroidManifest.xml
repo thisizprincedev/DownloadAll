@@ -1,0 +1,53 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="in.mobicomly.download">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+
+    <application >
+        <activity
+            android:name="in.mobicomly.download.activity.MainActivity">
+        </activity>
+        <activity
+            android:name="in.mobicomly.download.activity.UrlDownLoadActivity">
+        </activity>
+        <activity
+            android:name="in.mobicomly.download.activity.DownloadManagementActivity">
+        </activity>
+        <activity
+            android:name="in.mobicomly.download.activity.TorrentInfoActivity">
+        </activity>
+        <activity
+            android:name="in.mobicomly.download.activity.AppSettingActivity">
+        </activity>
+        <activity
+            android:name="in.mobicomly.download.activity.PlayerActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppStartLoadTranslucent">
+        </activity>
+        <activity
+            android:name="in.mobicomly.download.activity.MagnetSearchActivity"
+            android:windowSoftInputMode="adjustPan" >
+        </activity>
+        <activity
+            android:name="in.mobicomly.download.activity.BrowseActivity">
+        </activity>
+        <service android:name="in.mobicomly.download.service.DownService"/>
+    </application>
+
+</manifest>

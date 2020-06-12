@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_header_height"
+        android:background="@color/colorMain">
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/top_nav"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_nav_height"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="@dimen/top_nav_top_pad"
+        android:layout_marginLeft="@dimen/top_nav_sides_pad"
+        android:layout_marginRight="@dimen/top_nav_sides_pad"
+        android:background="@drawable/style_round_corner">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/add_download"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:textSize="@dimen/top_nav_text_size"
+                android:text="@string/add_download"
+                android:padding="@dimen/top_nav_menu_pad"
+                app:corner="@dimen/top_nav_menu_corner"
+                app:isShowState="true"
+                app:state_drawable_mode="top"
+                app:state_drawable_padding_top="@dimen/top_nav_menu_pad"
+                app:state_drawable_width="@dimen/top_nav_icon_height"
+                app:state_drawable_height="@dimen/top_nav_icon_height"
+                app:state_drawable="@drawable/ic_plus"
+                app:pressBgColor="@color/whitesmoke"/>
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/down_manage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:textSize="@dimen/top_nav_text_size"
+                android:text="@string/download_management"
+                android:padding="@dimen/top_nav_menu_pad"
+                app:corner="@dimen/top_nav_menu_corner"
+                app:isShowState="true"
+                app:state_drawable_mode="top"
+                app:state_drawable_padding_top="@dimen/top_nav_menu_pad"
+                app:state_drawable_width="@dimen/top_nav_icon_height"
+                app:state_drawable_height="@dimen/top_nav_icon_height"
+                app:state_drawable="@drawable/ic_download"
+                app:pressBgColor="@color/whitesmoke"/>
+            <com.coorchice.library.SuperTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:textSize="@dimen/top_nav_text_size"
+                android:text="@string/download_management"
+                android:padding="@dimen/top_nav_menu_pad"
+                app:corner="@dimen/top_nav_menu_corner"
+                app:isShowState="true"
+                app:state_drawable_mode="top"
+                app:state_drawable_padding_top="@dimen/top_nav_menu_pad"
+                app:state_drawable_width="@dimen/top_nav_icon_height"
+                app:state_drawable_height="@dimen/top_nav_icon_height"
+                app:state_drawable="@drawable/ic_download"
+                app:pressBgColor="@color/whitesmoke"/>
+            <com.coorchice.library.SuperTextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="bottom|center"
+                android:textSize="@dimen/top_nav_text_size"
+                android:text="@string/add_download"
+                android:padding="@dimen/top_nav_menu_pad"
+                app:corner="@dimen/top_nav_menu_corner"
+                app:isShowState="true"
+                app:state_drawable_mode="top"
+                app:state_drawable_padding_top="@dimen/top_nav_menu_pad"
+                app:state_drawable_width="@dimen/top_nav_icon_height"
+                app:state_drawable_height="@dimen/top_nav_icon_height"
+                app:state_drawable="@drawable/ic_download"
+                app:pressBgColor="@color/whitesmoke"/>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/header">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="60dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="123456789" />
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

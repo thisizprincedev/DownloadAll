@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/qr" android:icon="@drawable/ic_qr" android:title="@string/qr_download"/>
+    <item android:id="@+id/url" android:icon="@drawable/ic_url" android:title="@string/url_download"/>
+    <item android:id="@+id/bt" android:icon="@drawable/ic_bt" android:title="@string/bt_download"/>
+    <item android:id="@+id/cancel" android:icon="@drawable/ic_cancel" android:title="@string/cancel"/>
+</menu>

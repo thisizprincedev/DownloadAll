@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <include
+        android:id="@+id/bolck_titlebar"
+        layout="@layout/view_top_bar" />
+
+    <EditText
+        android:id="@+id/url_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:hint="@string/url_download_hit"
+        android:background="@drawable/style_editext_corner"
+        android:layout_margin="@dimen/default_pad"
+        android:padding="@dimen/default_pad"
+        android:textCursorDrawable="@null"
+        android:minLines="5"/>
+    <com.coorchice.library.SuperTextView
+        android:id="@+id/start_download"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/down_btn_height"
+        android:layout_margin="@dimen/default_pad"
+        android:text="@string/download"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:background="@color/colorMain"
+        app:corner="@dimen/top_nav_menu_corner"/>
+    <TextView
+        android:id="@+id/tv_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="" />
+</LinearLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <dimen name="default_pad">10dp</dimen>
+    <dimen name="default_pad2">5dp</dimen>
+
+</resources>

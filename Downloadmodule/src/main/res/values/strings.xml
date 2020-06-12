@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">MObiDownloader</string>
+    <string name="app_db_path">Mobicomly/dowload/db</string>
+    <string name="app_down_path">Mobicomly/dowload/file</string>
+    <string name="app_crash_path">Mobicomly/dowload/crash</string>
+    <string name="app_video_thumbnail_path">Mobicomly/dowload/.pic</string>
+    <string name="xl_package_name">com.xunlei.downloadprovider</string>
+
+    <string name="title_dialog">prompt</string>
+    <string name="setting">Set up</string>
+    <string name="resume">carry on</string>
+    <string name="cancel">cancel</string>
+    <string name="back">return</string>
+    <string name="open">turn on</string>
+    <string name="play">Play</string>
+    <string name="download">Download</string>
+    <string name="downloading">Downloading</string>
+    <string name="down_finish">Completed</string>
+    <string name="is_stop">Paused</string>
+    <string name="wait_down">Waiting for download</string>
+    <string name="bt_search">Torrent search</string>
+    <string name="date">time</string>
+    <string name="hot">hot</string>
+
+    <string name="message_setting_comeback">Go to the settings interface.</string>
+    <string name="message_permission_rationale">Please authorize the following necessary permission program to continue running:\n\n%1$s</string>
+    <string name="message_permission_always_failed">Please go to the settings interface to grant permission:\n\n%1$s</string>
+    <string name="down_count">DOWNLOAD : %1$s/%2$s</string>
+    <string name="down_speed">SPEED : %1$s</string>
+    <string name="down_speed_up">Boost: %1$s</string>
+    <string name="remaining_time">Time: %1$s</string>
+    <string name="play_time">%1$s/%2$s</string>
+    <string name="magnet_date">date:%1$s</string>
+    <string name="magnet_size">size:%1$s</string>
+    <string name="magnet_hot">hot:%1$s</string>
+    <string name="search_source">Search source：%1$s</string>
+    <string name="search_sort">Sort results：%1$s</string>
+
+    <string name="add_download">Add task</string>
+    <string name="add_downloading">Adding task....</string>
+    <string name="download_management">Download management</string>
+    <string name="new_download"> New download task </string>
+    <string name="slest_option"> select operation </string>
+    <string name="qr_download"> Scan QR code to download </string>
+    <string name="url_download"> Download link</string>
+    <string name="bt_download"> select BT seeds </string>
+    <string name="bt_file_error"> parse of seed file failed </string>
+    <string name="bt_file_info"> Seed file information </string>
+    <string name="not_diy_down_bt"> At present, only all files of torrents can be downloaded, and the download of specified files is not supported yet </string>
+
+    <string name="url_download_hit"> Please enter or paste the download link (support: magnetic chain, thunder://, ftp://, http:// ed2k://) </string>
+    <string name="task_earlier_has"> The task already exists in the download list </string>
+    <string name="task_earlier_success"> The task already exists in the completion list </string>
+    <string name="add_task_fail"> Add task failed, please try again! </string>
+    <string name="add_task_success"> Task added successfully! </string>
+    <string name="dele_success"> Delete successfully </string>
+    <string name="dele_fail"> Deletion failed </string>
+    <string name="determine_dele"> Confirm deletion </string>
+    <string name="dele_data_and_file"> delete along with the file </string>
+    <string name="file_is_dele"> The local file has been deleted </string>
+
+    <string name="check_file"> Please select the file </string>
+    <string name="check_count"> Selected(%1$s/%2$s)</string>
+    <string name="check_all"> Select all </string>
+    <string name="cancel_check_all"> Cancel all selections </string>
+
+    <string name="test_url">thunder://QUFmdHA6Ly95Z2R5ODp5Z2R5OEB5ZzQ1LmR5ZHl0dC5uZXQ6ODExNi9bJUU5JTk4JUIzJUU1JTg1JTg5JUU3JTk0JUI1JUU1JUJEJUIxd3d3LnlnZHk4Lm5ldF0lRTUlQUYlQkIlRTUlQTQlQTIlRTclOTIlQjAlRTYlQjglQjglRTglQUUlQjAuSEQuNzIwcC4lRTUlOUIlQkQlRTglOEIlQjElRTUlOEYlOEMlRTglQUYlQUQlRTQlQjglQUQlRTUlQUQlOTcubWt2Wlo=</string>
+
+
+</resources>

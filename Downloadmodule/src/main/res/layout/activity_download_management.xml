@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorMain"
+        android:orientation="horizontal"
+        android:gravity="right">
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/open_add_task_pop"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:gravity="center"
+            app:isShowState="true"
+            app:state_drawable_height="25dp"
+            app:state_drawable_width="25dp"
+            app:state_drawable="@drawable/ic_plus2" />
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/open_magnet_search"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:gravity="center"
+            app:isShowState="true"
+            app:state_drawable_height="25dp"
+            app:state_drawable_width="25dp"
+            app:state_drawable="@drawable/ic_search" />
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/open_setting"
+            android:layout_width="@dimen/top_bar_height"
+            android:layout_height="@dimen/top_bar_height"
+            android:gravity="center"
+            app:isShowState="true"
+            app:state_drawable_height="25dp"
+            app:state_drawable_width="25dp"
+            app:state_drawable="@drawable/ic_setting" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:background="@color/colorMain">
+        <TextView
+            android:id="@+id/downloading"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/downloading"
+            android:textColor="#FF424242"/>
+        <TextView
+            android:id="@+id/downloadfinish"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/down_finish"
+            android:textColor="#FF424242"/>
+    </LinearLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>

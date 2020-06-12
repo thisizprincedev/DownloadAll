@@ -1,0 +1,29 @@
+[{
+        "site": "BT magnetic chain",
+        "waiting": "0",
+        "group": "//ul[@class='mlist']//li",
+        "magnet": ".//h3[1]/a[1]//@href",
+        "name": ".//h3[1]/a",
+        "size": ".//dl[@class='BotInfo']//dt[1]/span[2]",
+        "count": ".//dl[@class='BotInfo']//dt[1]/span[1]",
+        "hot": ".//dl[@class='BotInfo']//dt[1]/span[3]",
+        "url": "https://www.bturl.cc",
+        "source": "https://www.bturl.cc/search/%1$s_%2$s_%3$s.html",
+        "hotsort": "click",
+        "datesort": "ctime"
+    },
+    {
+        "site": "Magnetic bar",
+        "waiting": "0",
+        "group": "//div[@class='search-item']",
+        "magnet": ".//h3[1]/a[1]//@href",
+        "name": ".//h3[1]/a",
+        "size": ".//div[@class='item-bar']//span[3]//b",
+        "count": ".//div[@class='item-bar']//span[2]//b",
+        "hot": ".//div[@class='item-bar']//span[4]//b",
+        "url": "www.ciliba.biz",
+        "source": "https://www.ciliba.biz/s/%1$s_%2$s_%3$s.html",
+        "hotsort": "hits",
+        "datesort": "time"
+    }
+]

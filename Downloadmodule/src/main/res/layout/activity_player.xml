@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/play_view_root">
+
+    <SurfaceView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:keepScreenOn="true"
+        android:text="@string/app_name"
+        android:textColor="#33b5e5"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:id="@+id/top_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/black_ff">
+        <com.coorchice.library.SuperTextView
+            android:id="@+id/close_view"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/top_bar_height"
+            android:gravity="center"
+            android:text="@string/back"
+            android:textSize="@dimen/top_bar_back_text_size"
+            android:textColor="@color/white"
+            android:paddingLeft="35dp"
+            app:pressTextColor="@color/colorAccent"
+            app:isShowState="true"
+            app:state_drawable="@drawable/ic_back"
+            app:state_drawable_mode="left"
+            app:state_drawable_padding_left="@dimen/default_pad"
+            app:state_drawable_height="@dimen/top_bar_back_icon_height"
+            app:state_drawable_width="@dimen/top_bar_back_icon_height" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true">
+            <com.coorchice.library.SuperTextView
+                android:id="@+id/more_view"
+                android:layout_width="@dimen/top_bar_height"
+                android:layout_height="@dimen/top_bar_height"
+                android:gravity="center"
+                app:isShowState="true"
+                app:state_drawable="@drawable/ic_more"
+                app:state_drawable_height="@dimen/top_bar_back_icon_height"
+                app:state_drawable_mode="center"
+                app:state_drawable_width="@dimen/top_bar_back_icon_height" />
+            <LinearLayout
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+               android:layout_toRightOf="@id/more_view"
+                android:padding="@dimen/default_pad2"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+                <ImageView
+                    android:id="@+id/battery_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/ic_battery_60"/>
+                <TextView
+                    android:id="@+id/system_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/file_item_text_size"
+                    android:gravity="center"
+                    android:text="20:41"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/black_ff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:orientation="vertical">
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:id="@+id/play_seek_bar"
+            android:gravity="center" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/play_time"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/white"
+                android:paddingLeft="@dimen/default_pad"
+                android:text="1:32:23/1:04:23"/>
+            <ImageView
+                android:id="@+id/play_pause"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:src="@drawable/ic_video_stop"/>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"></LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!--<include layout="@layout/view_video_more_setting" />-->
+
+</RelativeLayout>
